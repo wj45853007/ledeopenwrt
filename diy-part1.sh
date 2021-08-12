@@ -16,5 +16,6 @@
 # Add a feed source
  echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
  echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
- echo 'src-git OpenAppFilter https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter' >>feeds.conf.default
- echo 'src-git godproxy https://github.com/godros/luci-app-godproxy.git package/luci-app-godproxy' >>feeds.conf.default 
+# Add a feed source
+ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+ sed -i '$a src-git small8 https://github.com/kenzok8/small-package' feeds.conf.default
